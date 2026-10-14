@@ -5,12 +5,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const sunIcon = document.querySelector('.sun-icon');
     const moonIcon = document.querySelector('.moon-icon');
 
+    // Reset the previous light-mode default once, then preserve future choices.
+    const themeDefaultVersion = 'dark-default-v1';
+    if (localStorage.getItem('theme-default-version') !== themeDefaultVersion) {
+        localStorage.removeItem('theme');
+        localStorage.setItem('theme-default-version', themeDefaultVersion);
+    }
+
     // Check for saved theme
     const savedTheme = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', savedTheme);
     if (savedTheme === 'light') {
         sunIcon.style.display = 'none';
         moonIcon.style.display = 'block';
+    } else {
+        sunIcon.style.display = 'block';
+        moonIcon.style.display = 'none';
     }
 
     themeToggle.addEventListener('click', () => {
