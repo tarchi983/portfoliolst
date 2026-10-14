@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -67,6 +67,9 @@
         <section id="home" class="hero">
             <div class="container hero-content">
                 <div class="hero-text">
+                    <div class="profile-picture">
+                        <img src="images/profile picture.jpeg" alt="Portrait of Oussama Tarchi">
+                    </div>
                     <p class="greeting">Hi there, I'm</p>
                     <h1 class="glitch-effect" data-text="Oussama Tarchi">Oussama Tarchi</h1>
                     <h2 class="typewriter"><span class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
@@ -79,6 +82,8 @@
                     <div class="cta-group">
                         <a href="#projects" class="btn btn-primary">View My Work</a>
                         <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                        <a href="CV/CV_Tarchi_Oussama_v3%20(1)%20(2)%20(1).pdf" class="btn btn-secondary"
+                            download>Download CV</a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -181,10 +186,11 @@
                     <div class="line"></div>
                 </div>
                 <div class="projects-grid">
-                    <div class="project-card glass-panel">
+                    <div class="project-card project-onda glass-panel">
                         <div class="project-content">
                             <div class="project-links">
-                                <a href="#" class="icon-link" aria-label="GitHub Repository">
+                                <a href="https://github.com/tarchi983/Onda-badges-Dakhla" class="icon-link"
+                                    aria-label="GitHub Repository" target="_blank" rel="noopener noreferrer">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
@@ -193,31 +199,25 @@
                                         </path>
                                     </svg>
                                 </a>
-                                <a href="#" class="icon-link" aria-label="Live Demo">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg>
-                                </a>
                             </div>
-                            <h3>Campus Route Optimizer</h3>
-                            <p>An algorithmic solution implementing Dijkstra's and A* to find the most efficient paths
-                                between buildings at FST Settat. Useful for freshmen learning campus navigation.</p>
+                            <h3>ONDA Badges Dakhla</h3>
+                            <p>A Java desktop application that tracks badge expiration dates from Excel workbooks,
+                                displays badge status, and sends desktop alerts and email reminders.</p>
                             <div class="tech-stack">
-                                <span>Java</span>
-                                <span>Graph Theory</span>
-                                <span>JavaFX</span>
+                                <span>Java 17</span>
+                                <span>Java Swing</span>
+                                <span>Apache POI</span>
+                                <span>JavaMail</span>
                             </div>
                         </div>
-                    </div>
+                    </div> 
 
-                    <div class="project-card glass-panel">
+                    <div class="project-card project-darija glass-panel">
                         <div class="project-content">
                             <div class="project-links">
-                                <a href="#" class="icon-link" aria-label="GitHub Repository">
+                                <a href="https://github.com/tarchi983/enset-challenge-submission-FstCode"
+                                    class="icon-link" aria-label="GitHub Repository" target="_blank"
+                                    rel="noopener noreferrer">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
@@ -227,21 +227,23 @@
                                     </svg>
                                 </a>
                             </div>
-                            <h3>Library Management API</h3>
-                            <p>A comprehensive RESTful API built for managing library inventory, user checkouts, and
-                                late fees. Includes secure JWT authentication and role-based access control.</p>
+                            <h3>Darija AI Immersion System</h3>
+                            <p>An AI-powered web application for learning Moroccan Darija through conversations,
+                                quizzes, session summaries, and cultural insights.</p>
                             <div class="tech-stack">
-                                <span>Node.js</span>
-                                <span>Express</span>
+                                <span>Python</span>
+                                <span>CrewAI</span>
+                                <span>Flask</span>
                                 <span>MongoDB</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-card glass-panel">
+                    <div class="project-card project-antigravity glass-panel">
                         <div class="project-content">
                             <div class="project-links">
-                                <a href="#" class="icon-link" aria-label="GitHub Repository">
+                                <a href="https://github.com/tarchi983/OTA-SUPPORT" class="icon-link"
+                                    aria-label="GitHub Repository" target="_blank" rel="noopener noreferrer">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
@@ -251,13 +253,92 @@
                                     </svg>
                                 </a>
                             </div>
-                            <h3>Pneumonia Detection AI</h3>
-                            <p>Machine learning model using Convolutional Neural Networks to detect signs of pneumonia
-                                from Chest X-Ray images with 94% accuracy, deployed via a simple web dashboard.</p>
+                            <h3>AntiGravity Voice Agent</h3>
+                            <p>An AI-powered telecom customer support agent that handles voice and text requests,
+                                searches a knowledge base, stores call reports, and detects recurring issues.</p>
                             <div class="tech-stack">
                                 <span>Python</span>
-                                <span>TensorFlow</span>
-                                <span>Flask</span>
+                                <span>Groq</span>
+                                <span>Gemini</span>
+                                <span>Pinecone</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card project-pharmacy glass-panel">
+                        <div class="project-content">
+                            <div class="project-links">
+                                <a href="https://github.com/tarchi983/gestion-pharmacie-java" class="icon-link"
+                                    aria-label="GitHub Repository" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <h3>Pharmacy Management System</h3>
+                            <p>A desktop application for managing pharmacy operations, including medicines, stock,
+                                sales, prescriptions, customers, suppliers, orders, and analytics.</p>
+                            <div class="tech-stack">
+                                <span>Java</span>
+                                <span>Java Swing</span>
+                                <span>MySQL</span>
+                                <span>JDBC</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card project-qa glass-panel">
+                        <div class="project-content">
+                            <div class="project-links">
+                                <a href="https://github.com/tarchi983/Testing-project" class="icon-link"
+                                    aria-label="GitHub Repository" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <h3>QA Agent System</h3>
+                            <p>An autonomous website QA runner that uses Chromium and specialized agents to test
+                                interfaces, capture screenshots, review visual states, and generate HTML reports.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>Playwright</span>
+                                <span>FastAPI</span>
+                                <span>OpenRouter</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card project-portfolio glass-panel">
+                        <div class="project-content">
+                            <div class="project-links">
+                                <a href="https://github.com/tarchi983/portfoliolst" class="icon-link"
+                                    aria-label="GitHub Repository" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <h3>Personal Portfolio</h3>
+                            <p>A responsive personal portfolio website showcasing software engineering projects,
+                                technical skills, and contact information.</p>
+                            <div class="tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
                             </div>
                         </div>
                     </div>
@@ -297,6 +378,16 @@
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg>
                                 <span>Settat, Morocco</span>
+                            </div>
+                            <div class="info-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                                <a href="tel:0612001775">0612001775</a>
                             </div>
                         </div>
 

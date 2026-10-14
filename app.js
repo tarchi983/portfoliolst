@@ -6,13 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const moonIcon = document.querySelector('.moon-icon');
 
     // Check for saved theme
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        document.documentElement.setAttribute('data-theme', savedTheme);
-        if (savedTheme === 'light') {
-            sunIcon.style.display = 'none';
-            moonIcon.style.display = 'block';
-        }
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    if (savedTheme === 'light') {
+        sunIcon.style.display = 'none';
+        moonIcon.style.display = 'block';
     }
 
     themeToggle.addEventListener('click', () => {
